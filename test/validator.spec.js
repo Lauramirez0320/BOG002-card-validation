@@ -12,6 +12,7 @@ describe('validator', () => {
     });
 
     it.skip('debería retornar true para "4083952015263"', () => {
+      // isValid(4083952015263)
       // escribe aquí tu test
     });
 
