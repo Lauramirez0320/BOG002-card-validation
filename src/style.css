@@ -24,7 +24,7 @@ p{
 button{
   height:56px;
   width:200px;
-  margin-top: 10px;
+  margin: 10px;
   background-color:#85DB83;
   border: none;
   border-radius: 15px;
@@ -32,9 +32,18 @@ button{
   color: white;
 }
 
+button:hover{
+  background-color:#42ad41;
+  transition: all 0.4s linear;
+}
+
 .button-first-page{
   position: relative;
   left: 181px;
+}
+button:focus{
+  border: 2px solid #85DB83;
+  outline: none;
 }
 
 button a{
@@ -109,7 +118,11 @@ h1{
 
 
 h2{
-  font-family:'Roboto', sans-serif;
+  color: #535353;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 20px;
+  text-align: center;
 }
 
 span{
@@ -173,15 +186,68 @@ ul{
   margin: 25px;
 }
 
+/*Third page*/
+.container-form{
+  max-width: 850px;
+  margin: 1rem auto;
+  width: 85%;
+}
+.paragraph-title{
+  padding: 0 20%;
+  margin:  0 0 2em 0;
+}
+
+form {
+  max-width: 850px;
+  margin: 1rem auto;
+  padding: 20px;
+  text-align: right;
+}
+label{
+  font-size: 18px;
+  margin-right: 2em;
+}
+
+input, select{
+  border: 2px solid #B7B6B6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border-radius: 15px;
+  box-sizing: border-box;
+  display: inline-block;
+  height: 40px;
+  margin: 4px 0;
+  outline: none;
+  padding: 0px 20px;
+  width: 401px;
+  
+}
+
+input:focus {
+  border-radius: 15px;
+  border: 2px solid #85DB83;
+}
+
+select:focus {
+  border-radius: 15px;
+  border: 2px solid #85DB83;
+}
+
+.buttons-form-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 footer{
   /* position: fixed; */
   /* left: 0;
   bottom: 0; */
   background: #85DB83;
-  width: 100%;
-  padding: 10px 0;
   margin-top: 10px;
   overflow: hidden; 
+  padding: 10px 0;
+  width: 100%;
 }
 
 footer p{
